@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/curr_linear_layout"
+    tools:context="com.cleaner.esaymart.fragment.CurrentBookedServiceFragment">
+
+    <LinearLayout
+        android:id="@+id/booking_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="10"
+        tools:context="com.cleaner.esaymart.activity.ProductDetailActivity">
+
+        <LinearLayout
+            android:id="@+id/scrollbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.5"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scrollbars="none">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Service Details"
+                android:textColor="@color/gen_black"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_small"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service"
+                android:textColor="@color/gen_black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/service_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="washing"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_small"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Address"
+                android:textColor="@color/gen_black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/merchant_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/location_pink"
+                android:drawablePadding="5dp"
+                android:text="Gurgaon-Sector 9"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_small"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Payment Details"
+                android:textColor="@color/gen_black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sevice_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Paid"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/gen_black"
+            android:elevation="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/decline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/gen_white"
+                android:gravity="center"
+                android:text="Decline"
+                android:textColor="@color/gen_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/accept"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Accept"
+                android:textColor="@color/gen_white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/booking_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/error"
+            android:drawablePadding="5dp"
+            android:text="No Service Available"
+            android:textSize="22sp" />
+    </LinearLayout>
+</LinearLayout>

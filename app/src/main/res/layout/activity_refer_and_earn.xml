@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#90f21c1c"
+    android:orientation="vertical"
+    tools:context="com.cleaner.esaymart.activity.ReferAndEarnActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/refer_earn_earn" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/giftbox" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:text="Get Rs. 500 For Every Referal,Easiest way to Earn Money,Refer Now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_border"
+            android:elevation="5dp"
+            android:onClick="refer"
+            android:text="Refer"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:text="Get Rs. 500 For Every Referal,Easiest way to Earn Money,Refer Now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <Button
+            android:id="@+id/refer_button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_border"
+            android:elevation="5dp"
+            android:onClick="referacar"
+            android:text="Refer A Car"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:text="Get Rs. 500 For Every Referal,Easiest way to Earn Money,Refer Now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_border"
+            android:elevation="5dp"
+            android:onClick="referaperson"
+            android:text="Refer A Person"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</ScrollView>

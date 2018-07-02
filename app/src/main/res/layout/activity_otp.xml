@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.cleaner.esaymart.activity.OtpActivity">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/phone_auth_fields"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/field_verification_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_border"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Verification Code"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button_verify_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/loginbutton_selector"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="login with otp"
+            android:textColor="@color/background_color"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:background="@drawable/loginbutton_selector"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="resend otp"
+            android:textColor="@color/background_color"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

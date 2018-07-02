@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/weekly_layout"
+    tools:context="com.cleaner.esaymart.fragment.WeeklyReportFragment">
+
+    <Button
+        android:id="@+id/button_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="Browse Image"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_background"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:text="upload"
+        android:textColor="#fff" />
+
+
+</LinearLayout>

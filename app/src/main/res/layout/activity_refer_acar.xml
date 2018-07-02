@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/referCarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90f21c1c"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context="com.cleaner.esaymart.activity.ReferACar">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/refer_earn_earn" />
+
+    <LinearLayout
+        android:id="@+id/refercarlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Refer A Car"
+            android:textColor="@color/white_greyish"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/userCarName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/fullName"
+            android:inputType="textCapWords"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/userCarMobileNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/mobileNumber"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/userCarcarNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/vehical_number"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="vehical number  (optional)"
+            android:inputType="textCapWords"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/loginbutton_selector"
+            android:onClick="referAcarButton"
+            android:padding="3dp"
+            android:text="Refer"
+            android:textColor="@color/white_greyish"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/refercarlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Thanks"
+            android:textColor="@color/white_greyish"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Your Request was Accepted"
+            android:textColor="@color/white_greyish"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:onClick="refer_carHome"
+            android:src="@drawable/home_new" />
+    </LinearLayout>
+</LinearLayout>

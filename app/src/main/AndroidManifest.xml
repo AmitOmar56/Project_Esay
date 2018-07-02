@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cleaner.esaymart">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".imageUpload.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDJC-zoww8HmVjrcnm16oo44_IYiXRujis" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.FirstActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".activity.ServiceItemActivity" />
+        <activity android:name=".activity.ServiceDetailActivity" />
+        <activity
+            android:name=".activity.ServiceLocationActivity"
+            android:label="@string/title_activity_service_location" />
+        <activity android:name=".activity.FixedServiceActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.ProductItemActivity" />
+        <activity android:name=".activity.ProductDetailActivity" />
+        <activity android:name=".activity.ProductBookingDetailActivity" />
+        <activity android:name=".activity.ProductAddressActivity" />
+        <activity android:name=".activity.PaymentModeActivity" />
+        <activity android:name=".activity.PaymentGatewayActivity" />
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:label="My Orders" />
+        <activity
+            android:name=".activity.HistoryDetailActivity"
+            android:label="Order Details" />
+        <activity android:name=".activity.WalletActivity" />
+        <activity android:name=".activity.ProfileEditActivity" />
+        <activity android:name=".activity.ChangePasswordActivity" />
+        <activity android:name=".activity.ReferAndEarnActivity" />
+        <activity android:name=".activity.CartActivity" />
+        <activity
+            android:name=".activity.ChoiceActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity_cleaningBoy.Login_CleaningBoyActivity" />
+        <activity android:name=".activity_cleaningBoy.Register_Cleaning_BoyActivity" />
+        <activity
+            android:name=".activity_cleaningBoy.Home_CleaningActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".service.MyService" />
+
+        <activity
+            android:name=".activity_cleaningBoy.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".paymentgatway.InitialScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".paymentgatway.WebViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".paymentgatway.StatusActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.ForgotPasswordActivity" />
+        <activity android:name=".activity.CashOnDeliveryActivity" />
+        <activity android:name=".activity.OtpActivity" />
+        <activity android:name=".activity.ReferAndEarn" />
+        <activity android:name=".activity.ReferACar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90f21c1c"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context="com.cleaner.esaymart.fragment.ReferAPersonFragment">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Refer A Person"
+        android:textColor="@color/white_greyish"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_border"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="@string/fullName"
+        android:inputType="textCapWords"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/userEmailId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_border"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_border"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="@string/mobileNumber"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/aadharNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_border"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="@string/mobileNumber"
+        android:inputType="phone"
+        android:maxLength="12"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/loginbutton_selector"
+        android:padding="3dp"
+        android:text="Refer"
+        android:textColor="@color/white_greyish"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</LinearLayout>

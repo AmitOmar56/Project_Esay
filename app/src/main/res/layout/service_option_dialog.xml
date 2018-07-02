@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:text="Option"
+        android:textColor="#E50D5179"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dialog_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="5dp"
+        android:textSize="14sp"
+        android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/dialog_info"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/dialog_fixed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:background="@color/white_greyish"
+            android:text="Fixed" />
+
+        <Button
+            android:id="@+id/dialog_immediate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:background="@color/colorAccent"
+            android:text="Immediate" />
+    </LinearLayout>
+</LinearLayout>

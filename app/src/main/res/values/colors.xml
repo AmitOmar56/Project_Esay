@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_color">#009688</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+    <color name="transparent">#00000000</color>
+    <color name="gen_black">#000000</color>
+    <color name="grey_light">#E0E0E0</color>
+    <color name="dull_black">#69000000</color>
+    <color name="gen_white">#FFFFFF</color>
+
+    <string name="name_error">please enter name</string>
+    <string name="password_error">enter password</string>
+    <string name="please_fill_all_required_field">please fill all require field</string>
+    <string name="enter_email">enter email</string>
+    <string name="enter_valid_email">enter valid email</string>
+    <string name="Phone_error">enter phone number</string>
+    <string name="Phone_length_validation">enter valid number</string>
+    <string name="pass_error">please enter password</string>
+    <string name="pass_new_error">please enter new password</string>
+    <string name="pass_re_error">please enter retype password</string>
+
+</resources>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="com.cleaner.esaymart.activity.ProductBookingDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/account_sign"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#90324197"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:text="Add anew Address"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/location"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/service_fullName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/search_icon"
+                android:gravity="center_vertical"
+                android:hint="City*"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <EditText
+                android:id="@+id/service_mobileNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/search_icon"
+                android:gravity="center_vertical"
+                android:hint="Locality,area or street*"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <EditText
+                android:id="@+id/editText_flatno"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Flat no.,Building name*"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/layout_action1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+
+                    <EditText
+                        android:id="@+id/service_vehical_na"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="Pin code*"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white_greyish" />
+                </LinearLayout>
+
+                <!--<View-->
+                <!--android:layout_width="@dimen/view_width_small"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/grey_light" />-->
+
+                <LinearLayout
+                    android:id="@+id/layout_action2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <EditText
+                        android:id="@+id/service_vehical_nam"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="State*"
+                        android:inputType="textCapWords"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white_greyish" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/service_vehical_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Landmark (Optional)"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#90324197"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:text="Personal Detail"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/user"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/product_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="name*"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <EditText
+                android:id="@+id/product_contact_no"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Contact no*"
+                android:inputType="number"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <EditText
+                android:id="@+id/product_alternate_no"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Alternate Phone Number (Optional)*"
+                android:inputType="number"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#90324197"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:text="Address Type"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/user"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButton_home"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Home (All day Delivery)"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_work"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Work (Delivery between 10am - 5pm)"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/signUpBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/loginbutton_selector"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Save"
+                android:onClick="add_save"
+                android:textColor="@color/background_color"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

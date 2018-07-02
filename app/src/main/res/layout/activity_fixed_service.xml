@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90f21c1c"
+    android:id="@+id/fixed_layout"
+    tools:context="com.cleaner.esaymart.activity.FixedServiceActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Book an Appointment"
+            android:textColor="@color/white_greyish"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/service_fullName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Costomer Name"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <EditText
+            android:id="@+id/service_mobileNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/mobileNumber"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/service_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/location"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:layout_marginRight="25dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/service_location_clear"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/close" />
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <EditText
+            android:id="@+id/service_vehical_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/vehical_number"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="vehical name"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <EditText
+            android:id="@+id/service_vehical_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/vehical"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="vehical number"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <EditText
+            android:id="@+id/service_Date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/calendar_new"
+            android:drawablePadding="8dp"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:hint="Enter date"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <EditText
+            android:id="@+id/service_Time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/clock"
+            android:drawablePadding="8dp"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:hint="Enter Time"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/loginbutton_selector"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Book Now"
+            android:onClick="bookAppointment"
+            android:textColor="@color/background_color"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

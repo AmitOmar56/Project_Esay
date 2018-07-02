@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/service_linear"
+    tools:context="com.cleaner.esaymart.fragment.Home_serviceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/easy_mart_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/esay_mart_logo" />
+
+        <TextView
+            android:id="@+id/service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/easy_mart_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:text="Service"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_alignParentBottom="true"
+            app:rb_color="#b7cc0014"
+            app:rb_duration="3000"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_scale="6">
+
+            <Button
+                android:id="@+id/start_serviceButton"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_button"
+                android:text="start" />
+        </com.skyfishjy.library.RippleBackground>
+    </RelativeLayout>
+
+</LinearLayout>
